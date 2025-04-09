@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "toolkitten"
+version = "0.0.1"
+description = "Helpful functions and utilities"
+authors = ["Maxim Rusanov"]
+packages = [
+    { include = "toolkitten" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = "^2.2.4"
+pandas = "^2.2.3"
+matplotlib = "^3.9.1"
+mkdocs = "^1.6.1"
+mkdocs-material = "^9.6.11"
+jupyter = "^1.1.1"
+mkdocstrings = "^0.29.1"
+mkdocstrings-python = "^1.16.10"
+python-markdown-math = "^0.8"
+
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.2"

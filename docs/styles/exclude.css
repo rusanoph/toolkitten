@@ -1,0 +1,4 @@
+/* Hide elements with class .no-toc in TOC */
+.hidden {
+  display: none;
+}

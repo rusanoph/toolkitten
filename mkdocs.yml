@@ -1,0 +1,72 @@
+site_name: ToolKitten Docs
+site_description: "Toolkitten library documentation, including utils for plotting."
+site_author: "Maxim Rusanov"
+#repo_url: https://github.com/<account>/toolkitten
+
+nav:
+  - Home: index.md
+  - Plot:
+      - Subplot: plot/subplot.md
+      - Types: plot/types.md
+      - Exceptions: plot/exceptions.md
+      - Helper functions: plot/functions.md
+
+theme:
+  name: material
+  language: en
+  favicon: images/toolkitten_favicon.ico
+  logo: images/toolkitten_logo.svg
+  palette:
+    primary: blue
+    accent: lime
+  font:
+    text: "Roboto, sans-serif"
+    code: "Fira Code, monospace"
+  features:
+    - content.code.annotate
+  markdown_extensions:
+    - admonition
+    - pymdownx.arithmatex
+
+plugins:
+  - search
+  - mkdocstrings:
+      handler: python
+      docstring_style: google
+      custom_handlers:
+        python: mkdocstrings.handlers.python
+      handlers:
+        python:
+          options:
+            heading_level: 2
+            show_source: false
+
+search:
+  lang: en
+  placeholder: "Search documentation..."
+
+extra:
+  404_url: "404.html"
+
+extra_css:
+  - styles/exclude.css
+extra_javascript:
+  - script/exclude.js
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+
+markdown_extensions:
+  - mdx_math
+  - attr_list
+  - toc:
+      permalink: true
+  - admonition
+  - codehilite:
+      guess_lang: false
+
+build:
+  directory: site
+
+seo:
+  title: "Toolkitten Docs"
+  description: "Tools for working with Python, including computational, visualization, and machine learning algorithms."
+  keywords: "Python, documentation, machine learning, computing, visualization, statistics"
