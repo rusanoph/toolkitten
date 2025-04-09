@@ -4,7 +4,7 @@ site_author: "Maxim Rusanov"
 #repo_url: https://github.com/<account>/toolkitten
 
 nav:
-  - Home: index.md
+  - Overview: overview.md
   - Plot:
       - Subplot: plot/subplot.md
       - Types: plot/types.md
